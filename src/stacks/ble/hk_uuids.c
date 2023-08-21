@@ -64,6 +64,9 @@ void hk_uuids_to_name(const ble_uuid128_t *uuid, char str[40])
         case HK_CHR_ON:
             sprintf(str, "ON");
             break;
+        case HK_CHR_BRIGHTNESS:
+            sprintf(str, "BRIGHTNESS");
+            break;
         case HK_CHR_SERIAL_NUMBER:
             sprintf(str, "SERIAL_NUMBER");
             break;

@@ -160,6 +160,7 @@ uint16_t hk_chrs_properties_get_prop(hk_chr_types_t chr_type)
         return HK_CHR_PROP_SUPPORTS_READ;
 
     case HK_CHR_ON:
+    case HK_CHR_BRIGHTNESS:
         return HK_CHR_PROP_SUPPORTS_SECURE_READS 
         | HK_CHR_PROP_SUPPORTS_SECURE_WRITES 
         | HK_CHR_PROP_NOTIFIES_EVENTS_CONNECTED_STATE
@@ -226,7 +227,6 @@ uint16_t hk_chrs_properties_get_prop(hk_chr_types_t chr_type)
     case HK_CHR_SERVICE_LABEL_NAMESPACE:
     case HK_CHR_ACCESSORY_FLAGS:
     case HK_CHR_COLOR_TEMPERATURE:
-    case HK_CHR_BRIGHTNESS:
     case HK_CHR_ROTATION_DIRECTION:
     case HK_CHR_CURRENT_HORIZONTAL_TILT_ANGLE:
     case HK_CHR_CURRENT_VERTICAL_TILT_ANGLE:
